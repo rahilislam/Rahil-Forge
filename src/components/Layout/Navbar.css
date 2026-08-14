@@ -26,18 +26,14 @@
   justify-self: start;
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  font-family: var(--font-display);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
   text-decoration: none;
 }
 
-.brand-mark {
-  width: 34px;
-  height: 26px;
-  flex: 0 0 auto;
+.brand-logo {
+  display: block;
+  width: 168px;
+  height: auto;
+  max-height: 48px;
 }
 
 .desktop-nav {
@@ -103,6 +99,11 @@
     width: min(calc(100% - 2 * var(--space-5)), var(--layout-container-max));
     min-height: 68px;
     grid-template-columns: 1fr auto;
+  }
+
+  .brand-logo {
+    width: 154px;
+    max-height: 44px;
   }
 
   .desktop-nav,
