@@ -36,10 +36,47 @@ function App() {
 
         <ServicesSection />
 
-        <section id="about" className="anchor-section" aria-labelledby="about-title">
-          <div>
+        <section id="about" className="studio-section" aria-labelledby="about-title">
+          <div className="studio-heading">
             <p className="eyebrow">STUDIO</p>
             <h2 id="about-title">Small studio thinking, focused on real business problems.</h2>
+          </div>
+
+          <div className="studio-intro">
+            <p>
+              Rahil Forge is an independent digital studio built around a simple idea:
+              useful software starts with understanding the problem, not choosing a trend.
+            </p>
+            <p>
+              We work across websites, applications and business systems, keeping the
+              experience clear for the people who actually have to use them every day.
+            </p>
+          </div>
+
+          <div className="studio-principles" aria-label="Rahil Forge principles">
+            <article className="studio-principle">
+              <span className="principle-number">01</span>
+              <h3>Problem-first</h3>
+              <p>Start with the workflow, friction and outcome before adding technology.</p>
+            </article>
+
+            <article className="studio-principle">
+              <span className="principle-number">02</span>
+              <h3>Product-minded</h3>
+              <p>Design for clarity, speed and real usage—not just an impressive first screen.</p>
+            </article>
+
+            <article className="studio-principle">
+              <span className="principle-number">03</span>
+              <h3>Security-conscious</h3>
+              <p>Authentication, data access and input handling are treated as part of the build.</p>
+            </article>
+
+            <article className="studio-principle">
+              <span className="principle-number">04</span>
+              <h3>Built with intent</h3>
+              <p>Keep the stack practical and the experience focused on what the business needs.</p>
+            </article>
           </div>
         </section>
 
