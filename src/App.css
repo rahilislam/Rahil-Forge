@@ -1,0 +1,83 @@
+.site-layout {
+  min-height: 100vh;
+}
+
+.site-content {
+  min-height: 70vh;
+}
+
+.app-shell {
+  width: min(calc(100% - 2 * var(--space-6)), var(--layout-container-max));
+  margin-inline: auto;
+}
+
+.hero-section {
+  min-height: min(900px, 100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(76px + var(--space-16)) 0 var(--space-16);
+}
+
+.eyebrow {
+  margin-bottom: var(--space-5);
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.hero-section h1 {
+  max-width: 1050px;
+  margin-bottom: var(--space-8);
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.intro {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.anchor-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--section-space) 0;
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: 90px;
+}
+
+.anchor-section h2 {
+  max-width: 850px;
+  margin-bottom: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+@media (max-width: 767px) {
+  .app-shell {
+    width: min(calc(100% - 2 * var(--space-5)), var(--layout-container-max));
+  }
+
+  .hero-section {
+    min-height: 100svh;
+    padding-top: calc(68px + var(--space-12));
+  }
+
+  .hero-section h1 {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .anchor-section {
+    min-height: 55vh;
+  }
+}
