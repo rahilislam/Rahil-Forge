@@ -1,10 +1,10 @@
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from 'react'
 import './Button.css'
 
 type BaseProps = {
   variant?: 'primary' | 'secondary' | 'text'
   className?: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
 type ButtonProps = BaseProps & ButtonHTMLAttributes<HTMLButtonElement> & {
