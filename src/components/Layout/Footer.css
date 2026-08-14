@@ -18,23 +18,14 @@
 .footer-brand-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
   margin-bottom: var(--space-5);
+  text-decoration: none;
 }
 
-.footer-brand-mark {
-  width: 30px;
-  height: 20px;
-  color: var(--color-accent);
-}
-
-.footer-kicker,
-.footer-column-title {
-  margin-bottom: 0;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--color-text-secondary);
+.footer-brand-logo {
+  display: block;
+  width: 150px;
+  height: auto;
 }
 
 .footer-tagline {
@@ -54,6 +45,10 @@
 
 .footer-column-title {
   margin-bottom: var(--space-5);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-text-secondary);
 }
 
 .footer-column ul {
@@ -97,6 +92,10 @@
   .site-footer {
     width: min(calc(100% - 2 * var(--space-5)), var(--layout-container-max));
     padding-top: var(--space-12);
+  }
+
+  .footer-brand-logo {
+    width: 140px;
   }
 
   .footer-links {
