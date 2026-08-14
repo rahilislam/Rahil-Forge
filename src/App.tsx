@@ -1,5 +1,6 @@
 import Layout from './components/Layout/Layout'
 import WorkSection from './components/Work/WorkSection'
+import ServicesSection from './components/Services/ServicesSection'
 import { ButtonLink } from './components/UI/Button'
 import './App.css'
 
@@ -33,12 +34,7 @@ function App() {
 
         <WorkSection />
 
-        <section id="services" className="anchor-section" aria-labelledby="services-title">
-          <div>
-            <p className="eyebrow">SERVICES</p>
-            <h2 id="services-title">Websites, applications and useful digital systems.</h2>
-          </div>
-        </section>
+        <ServicesSection />
 
         <section id="about" className="anchor-section" aria-labelledby="about-title">
           <div>
