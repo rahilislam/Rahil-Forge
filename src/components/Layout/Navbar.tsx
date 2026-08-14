@@ -69,6 +69,10 @@ export default function Navbar() {
 
       <div id="mobile-menu" className={`mobile-menu ${isOpen ? 'is-open' : ''}`} aria-hidden={!isOpen}>
         <div className="mobile-menu-inner">
+          <a className="mobile-menu-brand" href="#top" onClick={closeMenu} aria-label="Rahil Forge home">
+            <img src={brandLogo} alt="Rahil Forge" />
+          </a>
+
           {links.map((link) => (
             <a key={link.href} href={link.href} className="mobile-nav-link" onClick={closeMenu} tabIndex={isOpen ? 0 : -1}>
               {link.label}
