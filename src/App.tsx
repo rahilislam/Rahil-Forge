@@ -61,10 +61,14 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="anchor-section" aria-labelledby="contact-title">
-          <div>
+        <section id="contact" className="contact-section" aria-labelledby="contact-title">
+          <div className="contact-copy">
             <p className="eyebrow">START A PROJECT</p>
             <h2 id="contact-title">Have a problem worth building around?</h2>
+            <p>Tell us what you are trying to improve, simplify or build. We can start by understanding the problem and deciding what actually needs to be made.</p>
+          </div>
+          <div className="contact-action">
+            <p className="contact-note">Websites · Applications · Digital systems</p>
             <ButtonLink className="section-cta" href="#contact">Tell us about it <span aria-hidden="true">→</span></ButtonLink>
           </div>
         </section>
