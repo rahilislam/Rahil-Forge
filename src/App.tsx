@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return (
     <Layout>
-      <main className="app-shell">
+      <main id="top" className="app-shell">
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-grid" aria-hidden="true" />
           <div className="hero-content">
