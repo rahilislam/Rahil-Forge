@@ -73,7 +73,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-4) var(--space-8);
-  margin-top: clamp(5rem, 10vw, 8rem);
+  margin-top: clamp(4rem, 8vw, 6rem);
   padding-top: var(--space-4);
   border-top: 1px solid var(--color-border);
   color: var(--color-text-muted);
@@ -164,7 +164,7 @@
   grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
   gap: clamp(3rem, 8vw, 7rem);
   align-items: end;
-  margin-bottom: clamp(4rem, 8vw, 7rem);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
 .process-header h2 {
@@ -234,7 +234,7 @@
 }
 
 .contact-section {
-  min-height: 62vh;
+  min-height: 46vh;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr);
   gap: clamp(3rem, 8vw, 7rem);
@@ -285,7 +285,7 @@
   }
 
   .studio-section {
-    gap: var(--space-12);
+    gap: var(--space-10);
   }
 
   .studio-intro,
@@ -318,7 +318,8 @@
 
   .hero-section {
     min-height: 100svh;
-    padding-top: calc(68px + var(--space-12));
+    padding-top: calc(68px + var(--space-10));
+    padding-bottom: var(--space-10);
   }
 
   .hero-section h1 {
@@ -333,13 +334,13 @@
   }
 
   .hero-meta {
-    margin-top: var(--space-16);
+    margin-top: var(--space-10);
   }
 
   .studio-section,
   .process-section,
   .contact-section {
-    padding: var(--space-20) 0;
+    padding: var(--space-14) 0;
   }
 
   .studio-heading h2,
@@ -355,7 +356,7 @@
   .studio-principle,
   .studio-principle:nth-child(2) {
     min-height: 0;
-    padding: var(--space-6) 0;
+    padding: var(--space-5) 0;
     border-right: 0;
     border-bottom: 1px solid var(--color-border);
   }
@@ -365,23 +366,23 @@
   }
 
   .principle-number {
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-5);
   }
 
   .process-header {
-    gap: var(--space-10);
-    margin-bottom: var(--space-12);
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
   }
 
   .process-step {
     grid-template-columns: 1fr;
-    gap: var(--space-5);
-    padding: var(--space-7) 0;
+    gap: var(--space-4);
+    padding: var(--space-6) 0;
   }
 
   .process-step > div {
     grid-template-columns: 1fr;
-    gap: var(--space-3);
+    gap: var(--space-2);
   }
 
   .process-kicker {
@@ -389,7 +390,8 @@
   }
 
   .contact-section {
-    min-height: 55vh;
+    min-height: 0;
+    padding-bottom: var(--space-16);
   }
 }
 
