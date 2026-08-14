@@ -142,6 +142,21 @@
     gap: 0;
   }
 
+  .mobile-menu-brand {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: var(--space-5);
+    text-decoration: none;
+  }
+
+  .mobile-menu-brand img {
+    display: block;
+    width: min(220px, 68vw);
+    height: auto;
+    max-height: 58px;
+  }
+
   .mobile-nav-link,
   .mobile-nav-cta {
     padding: 0.7rem 0;
