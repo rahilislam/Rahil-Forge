@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import './Navbar.css'
-import brandMark from '../../assets/rahil-forge-mark.svg'
+import brandLogo from '../../assets/rahil-forge-logo.svg'
 
 const links = [
   { label: 'Work', href: '#work' },
@@ -40,8 +40,7 @@ export default function Navbar() {
     <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`}>
       <nav className="navbar" aria-label="Primary navigation">
         <a className="brand" href="#top" onClick={closeMenu} aria-label="Rahil Forge home">
-          <img className="brand-mark" src={brandMark} alt="" aria-hidden="true" />
-          <span>RAHIL FORGE</span>
+          <img className="brand-logo" src={brandLogo} alt="Rahil Forge" />
         </a>
 
         <div className="desktop-nav" aria-label="Desktop navigation">
