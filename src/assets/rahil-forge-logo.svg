@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">Rahil Forge</title>
+  <desc id="desc">Rahil Forge RF mark and wordmark</desc>
+  <rect width="520" height="150" fill="none"/>
+  <g transform="translate(8 14)">
+    <path d="M0 12h68c26 0 42 12 42 32 0 14-8 25-22 30l28 36H78L48 72H20v38H0V12Zm20 18v25h42c10 0 17-4 17-13 0-8-7-12-17-12H20Z" fill="#F8F9FA"/>
+    <path d="M82 12h58l-15 22H70l12-22Zm-7 45h47l-15 22H75v39H55V79h20V57Z" fill="#FF6A00"/>
+  </g>
+  <path d="M174 14v122" stroke="#F8F9FA" stroke-width="2" opacity=".9"/>
+  <g fill="#F8F9FA" font-family="Manrope, Arial, sans-serif" font-weight="800" letter-spacing="3">
+    <text x="204" y="63" font-size="38">RAHIL</text>
+    <text x="204" y="108" font-size="38">FORGE</text>
+  </g>
+  <text x="205" y="134" fill="#FF6A00" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">IDEAS IN. DIGITAL PRODUCTS OUT.</text>
+</svg>
