@@ -24,11 +24,21 @@
 
 .brand {
   justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--font-display);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-decoration: none;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 20px;
+  flex: 0 0 auto;
+  color: var(--color-accent);
 }
 
 .desktop-nav {
@@ -110,7 +120,7 @@
     position: fixed;
     inset: 68px 0 0;
     display: block;
-    padding: var(--space-8) var(--space-5);
+    padding: var(--space-6) var(--space-5);
     background: rgba(8, 9, 11, 0.98);
     opacity: 0;
     pointer-events: none;
@@ -129,15 +139,15 @@
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    gap: var(--space-2);
+    gap: 0;
   }
 
   .mobile-nav-link,
   .mobile-nav-cta {
-    padding: 0.85rem 0;
+    padding: 0.7rem 0;
     border-bottom: 1px solid var(--color-border);
     font-family: var(--font-display);
-    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    font-size: clamp(1.65rem, 7vw, 2.35rem);
     font-weight: 600;
     text-decoration: none;
   }
@@ -147,10 +157,10 @@
   }
 
   .mobile-nav-cta {
-    margin-top: var(--space-6);
+    margin-top: var(--space-5);
     border: 1px solid var(--color-accent);
     border-radius: var(--radius-sm);
-    padding: 1rem 1.1rem;
+    padding: 0.85rem 1rem;
     color: var(--color-text-primary);
     background: var(--color-accent);
   }
