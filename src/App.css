@@ -312,7 +312,6 @@
 }
 
 @media (max-width: 767px) {
-  /* Mobile polish: preserve generous side gutters and compress the type scale. */
   .app-shell {
     width: calc(100% - 40px);
     max-width: none;
@@ -421,12 +420,13 @@
   }
 
   .process-step {
-    grid-template-columns: 28px 1fr;
+    grid-template-columns: 28px minmax(0, 1fr);
     gap: var(--space-4);
     padding: var(--space-6) 0;
   }
 
   .process-step > div {
+    min-width: 0;
     grid-template-columns: 1fr;
     gap: var(--space-2);
   }
@@ -478,8 +478,90 @@
   }
 
   .process-step {
-    grid-template-columns: 24px 1fr;
+    grid-template-columns: 24px minmax(0, 1fr);
     gap: var(--space-3);
+  }
+}
+
+/* Final responsive spacing pass: keep every mobile section in normal flow. */
+@media (max-width: 767px) {
+  .app-shell,
+  .hero-section,
+  .studio-section,
+  .process-section,
+  .contact-section {
+    max-width: 100%;
+  }
+
+  .hero-section,
+  .studio-section,
+  .process-section,
+  .contact-section {
+    overflow: visible;
+  }
+
+  .hero-content,
+  .hero-meta,
+  .studio-heading,
+  .studio-intro,
+  .studio-principles,
+  .process-header,
+  .process-steps,
+  .contact-copy,
+  .contact-action {
+    min-width: 0;
+  }
+
+  .studio-section {
+    gap: 2rem;
+  }
+
+  .studio-heading h2,
+  .process-header h2,
+  .contact-copy h2 {
+    max-width: none;
+    text-wrap: balance;
+  }
+
+  .studio-intro p,
+  .process-intro,
+  .contact-copy > p:last-child {
+    max-width: 100%;
+  }
+
+  .studio-principle {
+    padding-block: 1.25rem;
+  }
+
+  .process-step {
+    align-items: start;
+    padding-block: 1.5rem;
+  }
+
+  .process-step > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .process-kicker,
+  .process-step h3,
+  .process-step > div > p:last-child {
+    width: 100%;
+  }
+
+  .process-step > div > p:last-child {
+    margin-top: 0.1rem;
+  }
+
+  .contact-section {
+    gap: 2rem;
+  }
+
+  .contact-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
