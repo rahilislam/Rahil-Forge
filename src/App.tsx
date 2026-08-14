@@ -62,7 +62,7 @@ function App() {
           <div>
             <p className="eyebrow">START A PROJECT</p>
             <h2 id="contact-title">Have a problem worth building around?</h2>
-            <ButtonLink className="section-cta" href="mailto:hello@rahilforge.com">Tell us about it <span aria-hidden="true">→</span></ButtonLink>
+            <ButtonLink className="section-cta" href="#contact">Tell us about it <span aria-hidden="true">→</span></ButtonLink>
           </div>
         </section>
       </main>
